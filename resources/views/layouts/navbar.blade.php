@@ -172,7 +172,7 @@
             </li>
 
             <li class="nav-item {{ Request::is('mostSoldall' , 'mostSold1', 'mostSold2', 'mostSold3', 'mostSold4', 'mostSold5' )? 'active' : '' }}">
-                <li class="nav-item ">
+                {{-- <li class="nav-item "> --}}
                 <a class="nav-link collapsed" href="{{ url('/mostSoldall') }}" data-toggle="collapse" data-target="#collapseMsp"
                     aria-expanded="true" aria-controls="collapseMsp">
                     <i class="fas fa-fw fa-chart-area"></i>
