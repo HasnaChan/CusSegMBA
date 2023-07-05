@@ -155,7 +155,7 @@
                 <a class="nav-link collapsed" href="{{ url('/topProductall') }}" data-toggle="collapse" data-target="#collapseTpi"
                     aria-expanded="true" aria-controls="collapseTpi">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Top Products In Sales Amount</span>
+                    <span>Top Products</span>
                 </a>
                 <div id="collapseTpi" class="collapse" aria-labelledby="headingTpi" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -171,8 +171,7 @@
                 </div>
             </li>
 
-            <li class="nav-item {{ Request::is('mostSoldall' , 'mostSold1', 'mostSold2', 'mostSold3', 'mostSold4', 'mostSold5' )? 'active' : '' }}">
-                {{-- <li class="nav-item "> --}}
+            {{-- <li class="nav-item {{ Request::is('mostSoldall' , 'mostSold1', 'mostSold2', 'mostSold3', 'mostSold4', 'mostSold5' )? 'active' : '' }}">
                 <a class="nav-link collapsed" href="{{ url('/mostSoldall') }}" data-toggle="collapse" data-target="#collapseMsp"
                     aria-expanded="true" aria-controls="collapseMsp">
                     <i class="fas fa-fw fa-chart-area"></i>
@@ -181,7 +180,6 @@
                 <div id="collapseMsp" class="collapse" aria-labelledby="headingMsp" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Choose :</h6>
-                        {{-- Most_Sold_Products_All ; Most_Sold_Products_10 --}}
                         <a class="collapse-item {{ Request::is('mostSoldall')? 'active' : '' }}" href="{{ url('/mostSoldall') }}">Most Sold Products All</a>
                         <a class="collapse-item {{ Request::is('mostSold1')? 'active' : '' }}" href="{{ url('/mostSold1') }}">Most 10 Sold Products </a>
                         <a class="collapse-item {{ Request::is('mostSold2')? 'active' : '' }}" href="{{ url('/mostSold2') }}">Most 20 Sold Products </a>
@@ -190,9 +188,9 @@
                         <a class="collapse-item {{ Request::is('mostSold5')? 'active' : '' }}" href="{{ url('/mostSold5') }}">Most 50 Sold Products </a>
                     </div>
                 </div>
-            </li>
+            </li> --}}
 
-            <li class="nav-item {{ Request::is('topProductSalesall' , 'topProductSales1', 'topProductSales2', 'topProductSales3', 'topProductSales4', 'topProductSales5' )? 'active' : '' }}">
+            {{-- <li class="nav-item {{ Request::is('topProductSalesall' , 'topProductSales1', 'topProductSales2', 'topProductSales3', 'topProductSales4', 'topProductSales5' )? 'active' : '' }}">
                 <a class="nav-link collapsed" href="{{ url('/topProductSalesall') }}" data-toggle="collapse" data-target="#collapseTps"
                     aria-expanded="true" aria-controls="collapseTps">
                     <i class="fas fa-fw fa-chart-area"></i>
@@ -201,7 +199,6 @@
                 <div id="collapseTps" class="collapse" aria-labelledby="headingTps" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Choose :</h6>
-                        {{-- Top_Products_All ; Top_Products_10 --}}
                         <a class="collapse-item {{ Request::is('topProductSalesall')? 'active' : '' }}" href="{{ url('/topProductSalesall') }}">Top Products All</a>
                         <a class="collapse-item {{ Request::is('topProductSales1')? 'active' : '' }}" href="{{ url('/topProductSales1') }}">Top 10 Products</a>
                         <a class="collapse-item {{ Request::is('topProductSales2')? 'active' : '' }}" href="{{ url('/topProductSales2') }}">Top 20 Products</a>
@@ -210,7 +207,7 @@
                         <a class="collapse-item {{ Request::is('topProductSales5')? 'active' : '' }}" href="{{ url('/topProductSales5') }}">Top 50 Products</a>
                     </div>
                 </div>
-            </li>
+            </li> --}}
 
             <!-- Divider -->
         <hr class="sidebar-divider">
@@ -304,7 +301,7 @@
             </div>
 
             <!-- Nav Item - Collapse Menu -->
-            <li class="nav-item {{ Request::is('chartCustomerall' , 'chartCustomer1', 'chartCustomer2', 'chartCustomer3' )? 'active' : '' }}">
+            {{-- <li class="nav-item {{ Request::is('chartCustomerall' , 'chartCustomer1', 'chartCustomer2', 'chartCustomer3' )? 'active' : '' }}">
                 <a class="nav-link collapsed" href="{{ url('/chartCustomerall') }}" data-toggle="collapse" data-target="#collapseC"
                     aria-expanded="true" aria-controls="collapseC">
                     <i class="fas fa-fw fa-chart-area"></i>
@@ -313,38 +310,37 @@
                 <div id="collapseC" class="collapse" aria-labelledby="headingC" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Choose : </h6>
-                        {{-- chart_All_clusters ;  chart_3_clusters --}}
-                        {{-- <a class="collapse-item {{ Request::is('chartCustomerall')? 'active' : '' }}" href="{{ url('/chartCustomerall') }}">chart_All_clusters</a>
+                        <a class="collapse-item {{ Request::is('chartCustomerall')? 'active' : '' }}" href="{{ url('/chartCustomerall') }}">chart_All_clusters</a>
                         <a class="collapse-item {{ Request::is('chartCustomer1')? 'active' : '' }} " href="{{ url('/chartCustomer1') }}">chart_3_clusters</a>
-                        <a class="collapse-item {{ Request::is('chartCustomer2')? 'active' : '' }}" href="{{ url('/chartCustomer2') }}">chart_5_clusters</a> --}}
+                        <a class="collapse-item {{ Request::is('chartCustomer2')? 'active' : '' }}" href="{{ url('/chartCustomer2') }}">chart_5_clusters</a> 
                         <a class="collapse-item {{ Request::is('chartCustomer3')? 'active' : '' }}" href="{{ url('/chartCustomer3') }}">chart 7 clusters</a>
                     </div>
                 </div>
-            </li>
+            </li> --}}
 
-            <li class="nav-item {{ Request::is('kmeansElbowall' , 'kmeansElbow1', 'kmeansElbow2')? 'active' : '' }}">
-                <a class="nav-link collapsed" href="{{ url('/kmeansElbowall') }}" data-toggle="collapse" data-target="#collapseK"
+            <li class="nav-item {{ Request::is('kmeansElbowall' , 'kmeansElbow1', 'kmeansElbow2')? 'active' : '' }}" href="{{ url('/kmeansElbowall') }}">
+                {{-- data-toggle="collapse --}}
+                <a class="nav-link collapsed" href="{{ url('/kmeansElbowall') }}" " data-target="#collapseK"
                     aria-expanded="true" aria-controls="collapseK">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Kmeans Elbow</span>
+                    <span>Kmeans++</span>
                 </a>
-                <div id="collapseK" class="collapse" aria-labelledby="headingK" data-parent="#accordionSidebar">
+                {{-- <div id="collapseK" class="collapse" aria-labelledby="headingK" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Choose :</h6>
-                        {{-- kmeans_All ; kmeans_elbow_plot ; kmeans_cluster_plot --}}
                         <a class="collapse-item {{ Request::is('kmeansElbowall')? 'active' : '' }}" href="{{ url('/kmeansElbowall') }}">Kmeans All Plot</a>
                         <a class="collapse-item {{ Request::is('kmeansElbow2')? 'active' : '' }}" href="{{ url('/kmeansElbow2') }}">Kmeans Elbow Plot</a>
                         <a class="collapse-item {{ Request::is('kmeansElbow1')? 'active' : '' }}" href="{{ url('/kmeansElbow1') }}">Kmeans Cluster Plot</a>
                     </div>
-                </div>
+                </div> --}}
             </li>
 
-            <li class="nav-item {{ Request::is('dbscan')? 'active' : '' }}">
+            {{-- <li class="nav-item {{ Request::is('dbscan')? 'active' : '' }}">
                 <a class="nav-link" href="{{ url('/dbscan') }}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>DBSCAN</span>
                 </a>
-            </li>
+            </li> --}}
 
             {{-- <li class="nav-item">
                 <a class="nav-link collapsed" href="{{ url('/silhoutteScore1') }}" data-toggle="collapse" data-target="#collapseS"
@@ -371,11 +367,11 @@
             Market Basket Analysis
         </div>
 
-        <li class="nav-item {{ Request::is('apriori')? 'active' : '' }}">
+        {{-- <li class="nav-item {{ Request::is('apriori')? 'active' : '' }}">
             <a class="nav-link" href="{{ url('/apriori') }}">
                 <i class="fas fa-fw fa-chart-area"></i>
                 <span>Apriori 7 cluster</span></a>
-        </li>
+        </li> --}}
 
         <li class="nav-item {{ Request::is('fpGrowth')? 'active' : '' }}">
             <a class="nav-link" href="{{ url('/fpGrowth') }}">
@@ -383,11 +379,11 @@
                 <span>FP-Growth 7 clusters</span></a>
         </li>
 
-        <li class="nav-item {{ Request::is('eclat')? 'active' : '' }}">
+        {{-- <li class="nav-item {{ Request::is('eclat')? 'active' : '' }}">
             <a class="nav-link" href="/eclat">
                 <i class="fas fa-fw fa-chart-area"></i>
                 <span>Eclat 7 cluster</span></a>
-        </li>
+        </li> --}}
 
          <!-- Divider -->
          <hr class="sidebar-divider">
