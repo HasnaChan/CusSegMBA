@@ -59,7 +59,7 @@
 <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right" style="margin-right: 1000px ">
   <h1 class="display-1 fw-bold mt-5" style="color:#4E73DF">Data Mining Project</h1>
   <p class="lead" style="color: #4E73DF; font-size:20px; font-weight:400">Customer Segmentation and Market Basket Analysis</p>
-  <a href="{{ url('/transactionPercentage1') }}" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5" style="background-color: #4E73DF">Get Started</a>
+  <a href="{{ url('/transactionPercentage1') }}" class="btn btn-dark btn-xl shadow me-3 my-5" style="background-color: #4E73DF; border-radius: 15px; border:none ">Get Started</a>
 </div>
 
 </div>

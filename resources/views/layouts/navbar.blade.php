@@ -213,72 +213,6 @@
             </li>
 
             <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Customer Segmentation -->
-            <div class="sidebar-heading">
-                Customer Segmentation
-            </div>
-
-            <!-- Nav Item - Collapse Menu -->
-            <li class="nav-item {{ Request::is('chartCustomerall' , 'chartCustomer1', 'chartCustomer2', 'chartCustomer3' )? 'active' : '' }}">
-                <a class="nav-link collapsed" href="{{ url('/chartCustomerall') }}" data-toggle="collapse" data-target="#collapseC"
-                    aria-expanded="true" aria-controls="collapseC">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Chart Customer Segmentation</span>
-                </a>
-                <div id="collapseC" class="collapse" aria-labelledby="headingC" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Choose : </h6>
-                        {{-- chart_All_clusters ;  chart_3_clusters --}}
-                        {{-- <a class="collapse-item {{ Request::is('chartCustomerall')? 'active' : '' }}" href="{{ url('/chartCustomerall') }}">chart_All_clusters</a>
-                        <a class="collapse-item {{ Request::is('chartCustomer1')? 'active' : '' }} " href="{{ url('/chartCustomer1') }}">chart_3_clusters</a>
-                        <a class="collapse-item {{ Request::is('chartCustomer2')? 'active' : '' }}" href="{{ url('/chartCustomer2') }}">chart_5_clusters</a> --}}
-                        <a class="collapse-item {{ Request::is('chartCustomer3')? 'active' : '' }}" href="{{ url('/chartCustomer3') }}">chart 7 clusters</a>
-                    </div>
-                </div>
-            </li>
-
-            <li class="nav-item {{ Request::is('kmeansElbowall' , 'kmeansElbow1', 'kmeansElbow2')? 'active' : '' }}">
-                <a class="nav-link collapsed" href="{{ url('/kmeansElbowall') }}" data-toggle="collapse" data-target="#collapseK"
-                    aria-expanded="true" aria-controls="collapseK">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Kmeans Elbow</span>
-                </a>
-                <div id="collapseK" class="collapse" aria-labelledby="headingK" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Choose :</h6>
-                        {{-- kmeans_All ; kmeans_elbow_plot ; kmeans_cluster_plot --}}
-                        <a class="collapse-item {{ Request::is('kmeansElbowall')? 'active' : '' }}" href="{{ url('/kmeansElbowall') }}">Kmeans All Plot</a>
-                        <a class="collapse-item {{ Request::is('kmeansElbow2')? 'active' : '' }}" href="{{ url('/kmeansElbow2') }}">Kmeans Elbow Plot</a>
-                        <a class="collapse-item {{ Request::is('kmeansElbow1')? 'active' : '' }}" href="{{ url('/kmeansElbow1') }}">Kmeans Cluster Plot</a>
-                    </div>
-                </div>
-            </li>
-
-            <li class="nav-item {{ Request::is('dbscan')? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('/dbscan') }}">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>DBSCAN</span>
-                </a>
-            </li>
-
-            {{-- <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ url('/silhoutteScore1') }}" data-toggle="collapse" data-target="#collapseS"
-                    aria-expanded="true" aria-controls="collapseS">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Silhoutte Score 3 5 7 </span>
-                </a>
-                <div id="collapseS" class="collapse" aria-labelledby="headingS" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Pilih:</h6>
-                        <a class="collapse-item" href="{{ url('/silhoutteScore1') }}">Cluster Silhouette</a>
-                        <a class="collapse-item" href="{{ url('/silhoutteScore2') }}">Result Clusters</a>
-                    </div>
-                </div>
-            </li> --}}
-
-        <!-- Divider -->
         <hr class="sidebar-divider">
 
         <!-- RFM Analysis -->
@@ -360,6 +294,74 @@
                 </div>
             </div>
         </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Customer Segmentation -->
+            <div class="sidebar-heading">
+                Customer Segmentation
+            </div>
+
+            <!-- Nav Item - Collapse Menu -->
+            <li class="nav-item {{ Request::is('chartCustomerall' , 'chartCustomer1', 'chartCustomer2', 'chartCustomer3' )? 'active' : '' }}">
+                <a class="nav-link collapsed" href="{{ url('/chartCustomerall') }}" data-toggle="collapse" data-target="#collapseC"
+                    aria-expanded="true" aria-controls="collapseC">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Chart Customer Segmentation</span>
+                </a>
+                <div id="collapseC" class="collapse" aria-labelledby="headingC" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Choose : </h6>
+                        {{-- chart_All_clusters ;  chart_3_clusters --}}
+                        {{-- <a class="collapse-item {{ Request::is('chartCustomerall')? 'active' : '' }}" href="{{ url('/chartCustomerall') }}">chart_All_clusters</a>
+                        <a class="collapse-item {{ Request::is('chartCustomer1')? 'active' : '' }} " href="{{ url('/chartCustomer1') }}">chart_3_clusters</a>
+                        <a class="collapse-item {{ Request::is('chartCustomer2')? 'active' : '' }}" href="{{ url('/chartCustomer2') }}">chart_5_clusters</a> --}}
+                        <a class="collapse-item {{ Request::is('chartCustomer3')? 'active' : '' }}" href="{{ url('/chartCustomer3') }}">chart 7 clusters</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item {{ Request::is('kmeansElbowall' , 'kmeansElbow1', 'kmeansElbow2')? 'active' : '' }}">
+                <a class="nav-link collapsed" href="{{ url('/kmeansElbowall') }}" data-toggle="collapse" data-target="#collapseK"
+                    aria-expanded="true" aria-controls="collapseK">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Kmeans Elbow</span>
+                </a>
+                <div id="collapseK" class="collapse" aria-labelledby="headingK" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Choose :</h6>
+                        {{-- kmeans_All ; kmeans_elbow_plot ; kmeans_cluster_plot --}}
+                        <a class="collapse-item {{ Request::is('kmeansElbowall')? 'active' : '' }}" href="{{ url('/kmeansElbowall') }}">Kmeans All Plot</a>
+                        <a class="collapse-item {{ Request::is('kmeansElbow2')? 'active' : '' }}" href="{{ url('/kmeansElbow2') }}">Kmeans Elbow Plot</a>
+                        <a class="collapse-item {{ Request::is('kmeansElbow1')? 'active' : '' }}" href="{{ url('/kmeansElbow1') }}">Kmeans Cluster Plot</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item {{ Request::is('dbscan')? 'active' : '' }}">
+                <a class="nav-link" href="{{ url('/dbscan') }}">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>DBSCAN</span>
+                </a>
+            </li>
+
+            {{-- <li class="nav-item">
+                <a class="nav-link collapsed" href="{{ url('/silhoutteScore1') }}" data-toggle="collapse" data-target="#collapseS"
+                    aria-expanded="true" aria-controls="collapseS">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Silhoutte Score 3 5 7 </span>
+                </a>
+                <div id="collapseS" class="collapse" aria-labelledby="headingS" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Pilih:</h6>
+                        <a class="collapse-item" href="{{ url('/silhoutteScore1') }}">Cluster Silhouette</a>
+                        <a class="collapse-item" href="{{ url('/silhoutteScore2') }}">Result Clusters</a>
+                    </div>
+                </div>
+            </li> --}}
+
+        
 
                 <!-- Divider -->
         <hr class="sidebar-divider">
@@ -595,14 +597,14 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            {{-- <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Haiii guysssss hehe</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Hasna, Nicole, Riskya </span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
-                            </a> --}}
+                            </a>
                             <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                            {{-- <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -621,7 +623,7 @@
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
-                            </div>
+                            </div> --}}
                         </li>
 
                     </ul>
