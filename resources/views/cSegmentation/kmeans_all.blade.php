@@ -16,6 +16,9 @@
                  {!! file_get_contents(public_path('content/cust_seg/2. KMEANS ELBOW/1. kmeans_cluster_plot.html')) !!}
                 <br>
 
+                {!! file_get_contents(public_path('content/cust_seg/1. CHART CUST SEG/3. chart_7_clusters.html')) !!}
+                <br>
+                <br>
                 <h5 class="h5 mb-2 text-gray-800 font-weight-bold">Result 7 Clusters</h5>
                 <img src="content/cust_seg/4. SILHOUETTE 3 5 7/2. Result Clusters/result_7_clusters.png" alt="" width="900px">
                 <br>
