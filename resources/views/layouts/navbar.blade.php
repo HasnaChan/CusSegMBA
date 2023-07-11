@@ -210,15 +210,15 @@
             </li> --}}
 
             <!-- Divider -->
-        <hr class="sidebar-divider">
+        {{-- <hr class="sidebar-divider"> --}}
 
         <!-- RFM Analysis -->
-        <div class="sidebar-heading">
+        {{-- <div class="sidebar-heading">
             RFM Analysis
-        </div>
+        </div> --}}
 
         <!-- Nav Item - Collapse Menu -->
-        <li class="nav-item {{ Request::is('qqPlotall' , 'qqPlot3', 'qqPlot1', 'qqPlot2')? 'active' : '' }}">
+        {{-- <li class="nav-item {{ Request::is('qqPlotall' , 'qqPlot3', 'qqPlot1', 'qqPlot2')? 'active' : '' }}">
             <a class="nav-link collapsed" href="{{ url('/qqPlotall') }}" data-toggle="collapse" data-target="#collapseQ"
                 aria-expanded="true" aria-controls="collapseQ">
                 <i class="fas fa-fw fa-chart-area"></i>
@@ -233,9 +233,9 @@
                     <a class="collapse-item {{ Request::is('qqPlot2')? 'active' : '' }}" href="{{ url('/qqPlot2') }}">QQ plot monetory</a>
                 </div>
             </div>
-        </li>
+        </li> --}}
 
-        <li class="nav-item {{ Request::is('rfmBoxplot_all_7_clusters' , 'rfmBoxplot_recency_3', 'rfmBoxplot_frequency_3', 'rfmBoxplot_amount_3')? 'active' : '' }}">
+        {{-- <li class="nav-item {{ Request::is('rfmBoxplot_all_7_clusters' , 'rfmBoxplot_recency_3', 'rfmBoxplot_frequency_3', 'rfmBoxplot_amount_3')? 'active' : '' }}">
             <a class="nav-link collapsed" href="{{ url('/rfmBoxplot_all_7_clusters') }}" data-toggle="collapse" data-target="#collapserfmB"
                 aria-expanded="true" aria-controls="collapserfmB">
                 <i class="fas fa-fw fa-chart-area"></i>
@@ -248,7 +248,7 @@
                     <a class="collapse-item {{ Request::is('rfmBoxplot_recency_3')? 'active' : '' }}" href="{{ url('/rfmBoxplot_recency_3') }}">Recency Chart 7 Clusters</a>
                     <a class="collapse-item {{ Request::is('rfmBoxplot_frequency_3')? 'active' : '' }}" href="{{ url('/rfmBoxplot_frequency_3') }}">Frequency Chart 7 Clusters</a>
                     <a class="collapse-item {{ Request::is('rfmBoxplot_amount_3')? 'active' : '' }}" href="{{ url('/rfmBoxplot_amount_3') }}">Monetory Chart 7 Clusters</a>
-                </div>
+                </div> --}}
                 {{-- <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Amount:</h6>
                     <a class="collapse-item" href="{{ url('/rfmBoxplot_amount_all') }}">chart_amount_All</a>
@@ -270,10 +270,10 @@
                     <a class="collapse-item" href="{{ url('/rfmBoxplot_recency_2') }}">chart_recency_5_clusters</a>
                     <a class="collapse-item" href="{{ url('/rfmBoxplot_recency_3') }}">chart_recency_7_clusters</a>
                 </div> --}}
-            </div>
-        </li>
+            {{-- </div>
+        </li> --}}
 
-        <li class="nav-item {{ Request::is('rfmChartall' , 'rfmChart1', 'rfmChart2', 'rfmChart3', 'rfmChart4', 'rfmChart5')? 'active' : '' }}">
+        {{-- <li class="nav-item {{ Request::is('rfmChartall' , 'rfmChart1', 'rfmChart2', 'rfmChart3', 'rfmChart4', 'rfmChart5')? 'active' : '' }}">
             <a class="nav-link collapsed" href="{{ url('/rfmChartall') }}" data-toggle="collapse" data-target="#collapserfmc"
                 aria-expanded="true" aria-controls="collapserfmc">
                 <i class="fas fa-fw fa-chart-area"></i>
@@ -290,7 +290,7 @@
                     <a class="collapse-item {{ Request::is('rfmChart5')? 'active' : '' }}" href="{{ url('/rfmChart5') }}">Rec-Log vs Amount-Log</a>
                 </div>
             </div>
-        </li>
+        </li> --}}
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -312,7 +312,7 @@
                         <h6 class="collapse-header">Choose : </h6>
                         <a class="collapse-item {{ Request::is('chartCustomerall')? 'active' : '' }}" href="{{ url('/chartCustomerall') }}">chart_All_clusters</a>
                         <a class="collapse-item {{ Request::is('chartCustomer1')? 'active' : '' }} " href="{{ url('/chartCustomer1') }}">chart_3_clusters</a>
-                        <a class="collapse-item {{ Request::is('chartCustomer2')? 'active' : '' }}" href="{{ url('/chartCustomer2') }}">chart_5_clusters</a> 
+                        <a class="collapse-item {{ Request::is('chartCustomer2')? 'active' : '' }}" href="{{ url('/chartCustomer2') }}">chart_5_clusters</a>
                         <a class="collapse-item {{ Request::is('chartCustomer3')? 'active' : '' }}" href="{{ url('/chartCustomer3') }}">chart 7 clusters</a>
                     </div>
                 </div>
@@ -357,7 +357,7 @@
                 </div>
             </li> --}}
 
-        
+
 
                 <!-- Divider -->
         <hr class="sidebar-divider">
@@ -392,18 +392,18 @@
          <div class="sidebar-heading">
              Dataset Terbentuk
          </div>
- 
+
          <li class="nav-item {{ Request::is('datasetRFM')? 'active' : '' }}">
              <a class="nav-link" href="{{ url('/datasetRFM') }}">
                  <i class="fas fa-fw fa-chart-area"></i>
                  <span>Dataset RFM 7 Cluster</span></a>
          </li>
- 
+
          <li class="nav-item {{ Request::is('datasetMBA')? 'active' : '' }}">
              <a class="nav-link" href="{{ url('/datasetMBA') }}">
                  <i class="fas fa-fw fa-chart-area"></i>
                  <span>Dataset MBA 7 Cluster</span></a>
-         </li>          
+         </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -632,7 +632,7 @@
                         @yield('container')
                     </div>
                 </div>
-    
+
             </div>
             <!-- End of Main Content -->
 
@@ -685,7 +685,7 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
 
-    
+
 
 </body>
 
